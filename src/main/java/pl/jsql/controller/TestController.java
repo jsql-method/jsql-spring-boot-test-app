@@ -1,8 +1,5 @@
 package pl.jsql.controller;
 
-import it.jsql.connector.controller.JSQLController;
-import it.jsql.connector.service.IJSQLService;
-import it.jsql.connector.service.JSQLService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.CrossOrigin;
