@@ -25,25 +25,27 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-    maven{
-        url "http://46.41.135.99:8081/artifactory/libs-release-local"
+    maven {
+        url "https://nexus.jsql.it/nexus/content/repositories/releases/"
     }
     mavenCentral()
 }
 
 bootJar {
     baseName = 'jsql-api'
-    version =  ''
+    version = ''
 }
 
 dependencies {
+
+    compile 'jsql:spring-plugin:1.4'
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-configuration-processor')
     compile group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
     compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
-    //compile(group: 'it.jsql.connector.spring', name: 'jsql-spring-plugin', version: '1.0.3')
-    compile(group: 'it.jsql.connector.spring', name: 'jsql-spring-plugin', version: '0.0.4-dev')
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
     testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }
