@@ -11,6 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController extends JSQLController {
 
+    private final String API_URL = "https://test-provider.jsql.it/api/jsql";
+
+    @Override
+    public String getProviderUrl(){
+        return API_URL;
+    }
+
+
     @Override
     public JSQLConfig getConfig() {
         return new JSQLConfig("dawid.senko@jsql.it", "dawid.senko@jsql.it");
