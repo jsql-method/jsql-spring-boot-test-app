@@ -18,7 +18,6 @@ public class TestController extends JSQLController {
         return API_URL;
     }
 
-
     @Override
     public JSQLConfig getConfig() {
         return new JSQLConfig("dawid.senko@jsql.it", "dawid.senko@jsql.it");
