@@ -18,7 +18,7 @@ public class TestController extends JSQLController {
 
     @Override
     public JSQLConfig getConfig() {
-        return new JSQLConfig("dawid.senko@jsql.it", "dawid.senko@jsql.it");
+        return new JSQLConfig("dawid.senko@jsql.it", "production-dawid.senko@jsql.it");
     }
 
 }
